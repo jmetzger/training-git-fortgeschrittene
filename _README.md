@@ -16,6 +16,7 @@
      * [git checkout](#git-checkout)
      * [git merge](#git-merge)
      * [git tag](#git-tag)
+     * [git rm - Dateien löschen](#git-rm---dateien-löschen)
    
   1. Advanced Commands 
      * [git reflog](#git-reflog)
@@ -309,6 +310,22 @@ git fetch --tags
 ## Update master branch (rebase) and fetch all tags in addition from online 
 git checkout master
 git pull --rebase --tags
+```
+
+### git rm - Dateien löschen
+
+
+### Variante 1: lokal löschen, in staging und repo 
+
+```
+git rm datei1.txt 
+```
+
+### Variante 2: nur staging und repo, lokal behalten 
+
+```
+git rm --cached datei1.txt 
+
 ```
 
 ## Advanced Commands 
