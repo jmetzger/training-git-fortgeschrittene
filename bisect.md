@@ -39,7 +39,53 @@ git add -A && git commit -m "Adding the word 'stream'"
 cat test.txt
 ```
 
+```
+# Step 4.1: Find good commit -> "boat"
+git log 
+```
 
+```
+# Step 4.2: Find bad commit -> "latest" -> HEAD 
+```
+
+```
+# Step 4.3: start the process:
+# Start: git bisect start
+# Done: git bisect reset 
+git bisect start 
+
+```
+
+```
+# Step 5: enter the good commit
+git bisect good <commit-from-boat>
+```
+
+```
+# Step 6: enter the bad commit
+# last commit was bad 
+git bisect bad HEAD
+```
+
+```
+# Step 7.1: Git checks out a version in between
+cat test.txt 
+# is it good or bad ? (holds the word car or not) 
+git bisect bad 
+```
+
+```
+# Step 7.2: git again checks out a version in between
+cat test.txt
+# Good or bad ? (holds the word "boat" -> good , "car" -> bad 
+git bisect good
+# now git shows us the first bad commit 
+```
+
+```
+# Step 8: End the bisect wizard 
+git bisect reset 
+```
 
 
 
