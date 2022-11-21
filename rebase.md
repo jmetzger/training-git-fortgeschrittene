@@ -25,3 +25,9 @@ git rebase master
 
 ```
 
+## Example 2: with --onto 
+
+```
+git rebase --onto new-parent old-parent 
+```
+
