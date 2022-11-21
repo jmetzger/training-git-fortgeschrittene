@@ -34,6 +34,9 @@
      * [Force specfic commit message](pre-receive-hook.md)
      * [Alle Dateien, die sich geändert haben anzeigen z.B. heute](files-changed-today.md)
   
+  1. Advanced Specials 
+     * [Where was the bug introduced? git bisect](bisect.md)
+   
   1. Exercises 
      * [merge feature/4712 - conflict](merge-conflict.md)
      * [merge request with bitbucket](merge-request.md)
