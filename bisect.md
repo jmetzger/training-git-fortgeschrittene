@@ -1,5 +1,12 @@
 # git bisect 
 
+## What for ?
+
+  * My developers are working on a project 
+  * One developer creates a bug 
+  * That's within hundreds of commits 
+  * bisect helps to find, where it was introduced
+
 ## Walkthrough 
 
 ```
